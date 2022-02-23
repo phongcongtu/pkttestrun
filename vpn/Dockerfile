@@ -1,6 +1,6 @@
 FROM debian:buster-slim
 ENV http_proxy "http://117.4.115.169:8080"
-ENV https_proxy "113.161.70.165:41890"
+ENV https_proxy "http://113.161.70.165:41890"
 RUN apt update && \
         apt full-upgrade -y && \
         apt install wget -y && \
