@@ -1,10 +1,7 @@
+box: debian
 build:
   steps:
     - script:
-        code: echo "hello, world!"
-
-hello-again:
-  box: debian
-  steps:
-    - script:
-        code: echo "hello, again world!"
+        name: echo
+        code: |
+          echo "hello world!"
